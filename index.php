@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styl.css">
     <title>Wpisy</title>
 </head>
 
@@ -25,8 +26,8 @@
     $a_wyn=mysqli_fetch_assoc($a_res);
     echo '<h2> ID: '.$a_wyn['id']." ".$a_wyn['tytul'].'</h2>';
     echo'<h3>'.$a_wyn['data']."</h3>";
-    echo substr($a_wyn['tresc'],0,185)." ...";
-    echo "<a href='wpis.php?id=".$a."'>czytaj więcej</a>";
+    echo substr($a_wyn['tresc'],0,185)." ... ";
+    echo "<a href='wpis.php?id=".$a."'>Czytaj więcej</a>";
     ?>
     </div>
     <div class="two">
@@ -37,8 +38,8 @@
     $a_wyn=mysqli_fetch_assoc($a_res);
     echo '<h2> ID: '.$a_wyn['id']." ".$a_wyn['tytul'].'</h2>';
     echo'<h3>'.$a_wyn['data']."</h3>";
-    echo substr($a_wyn['tresc'],0,199)." ...";
-    echo "<a href='wpis.php?id=".$b."'>czytaj więcej</a>";
+    echo substr($a_wyn['tresc'],0,199)." ... ";
+    echo "<a href='wpis.php?id=".$b."'> Czytaj więcej</a>";
     ?>
     </div>
     <div class="three">
@@ -49,8 +50,8 @@
     $a_wyn=mysqli_fetch_assoc($a_res);
     echo '<h2> ID: '.$a_wyn['id']." ".$a_wyn['tytul'].'</h2>';
     echo'<h3>'.$a_wyn['data']."</h3>";
-    echo substr($a_wyn['tresc'],0,185)." ...";
-    echo " <a href='wpis.php?id=".$c."'>czytaj więcej</a>";
+    echo substr($a_wyn['tresc'],0,185)." ... ";
+    echo " <a href='wpis.php?id=".$c."'> Czytaj więcej</a>";
     mysqli_close($conn);
     ?>
     </div>

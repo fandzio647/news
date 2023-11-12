@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styl.css">
     <title>Wpisy</title>
 </head>
 
@@ -20,7 +21,7 @@
     echo '<h2> ID: '.$wyn['id']." ".$wyn['tytul'].'</h2>';
     echo'<h3>'.$wyn['data']."</h3>";
     echo $wyn['tresc'];
-    echo " <a href='index.php?id='>powrót do strony glównej</a>";
+    echo " <br><br><a href='index.php?id='>Powrót do strony glównej</a>";
     mysqli_close($conn);
     ?>
     </div>
