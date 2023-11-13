@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styl.css">
     <title>Wpisy</title>
+    <link rel="icon" type="image/x-icon" href="logo.ico">
 </head>
 
 <body>
@@ -19,7 +20,7 @@
     <h1>Wpisy na stronie</h1>
     <br>
     <div class="one">
-    <?php
+        <?php
     $a=$wyn_wpis;
     $a_sql="SELECT * FROM wpisy WHERE id=$a";
     $a_res=mysqli_query($conn,$a_sql);
@@ -31,7 +32,7 @@
     ?>
     </div>
     <div class="two">
-    <?php
+        <?php
     $b=$a-1;
     $a_sql="SELECT * FROM wpisy WHERE id=$b";
     $a_res=mysqli_query($conn,$a_sql);
@@ -43,7 +44,7 @@
     ?>
     </div>
     <div class="three">
-    <?php
+        <?php
     $c=$b-1;
     $a_sql="SELECT * FROM wpisy WHERE id=$c";
     $a_res=mysqli_query($conn,$a_sql);
@@ -55,8 +56,8 @@
     mysqli_close($conn);
     ?>
     </div>
-    
-    
+
+
 
 </body>
 
