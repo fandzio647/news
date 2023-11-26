@@ -38,3 +38,12 @@ body {
     width: 50%;
     margin-left: 10%;
 }
+.one:hover{
+    background-color: lightblue;
+}
+.two:hover{
+    background-color: lightblue;
+}
+.three:hover{
+    background-color: lightblue;
+}
