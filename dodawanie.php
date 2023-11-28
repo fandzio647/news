@@ -18,7 +18,7 @@ else{
 ?>
 <html>
 <head>
-<title>User Login</title>
+<title>NEW NEWS</title>
 <link rel="stylesheet" type="text/css" href="styl.css">
 
 </head>
