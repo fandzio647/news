@@ -34,13 +34,6 @@ $wyn_wpis=0;
         <a href="log.php">Logowanie</a>
         <a href="logout.php">Wylogowanie</a>
         
-        <?php
-            if ($_SESSION['Login'] !== "admin") {
-                echo "Brak uprawień do dodawania";
-            } else {
-                echo '<a href="dodawanie.php">Dodawawanie wpisów</a>';
-            }
-        ?>
     </div>
 
     <h1>Wpisy na stronie</h1>
@@ -109,6 +102,16 @@ $wyn_wpis=0;
     #mysqli_close($conn);
     ?>
     </div>
+    <div id="down-left">
+    <?php
+            if ($_SESSION['Login'] !== "admin") {
+                echo "Brak uprawień do dodawania";
+            } else {
+                echo '<a href="dodawanie.php">Dodawawanie wpisów</a>';
+            }
+        ?>
+    </div>
+    <div id="stopka"></div>
 
 </body>
 
