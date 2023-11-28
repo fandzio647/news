@@ -13,7 +13,12 @@ $wyn_wpis=0;
 </head>
 
 <body>
-    <div id="lewy">
+
+<header>
+        <h1>SWIEZENEWSY.PL</h1>
+ 
+        </header>
+    <nav>
     <?php
     #połczenie dotyczące przewijania strony 
     $conn = mysqli_connect("localhost", "root", "", "news");
@@ -29,14 +34,19 @@ $wyn_wpis=0;
 
     }
     ?>
-    </div>
-    <div id="prawy">
+  
         <a href="log.php">Logowanie</a>
         <a href="logout.php">Wylogowanie</a>
         
-    </div>
-
-    <h1>Wpisy na stronie</h1>
+        <?php
+            if ($_SESSION['Login'] !== "admin") {
+                echo "Brak uprawień do dodawania";
+            } else {
+                echo '<a href="dodawanie.php">Dodawawanie wpisów</a>';
+            }
+        ?> <br>
+        <h1>
+    Najnowsze Newsy:</h1></nav>
     <br>
     <div class="one">
         <?php
@@ -102,17 +112,16 @@ $wyn_wpis=0;
     #mysqli_close($conn);
     ?>
     </div>
-    <div id="down-left">
-    <?php
-            if ($_SESSION['Login'] !== "admin") {
-                echo "Brak uprawień do dodawania";
-            } else {
-                echo '<a href="dodawanie.php">Dodawawanie wpisów</a>';
-            }
-        ?>
-    </div>
-    <div id="stopka"></div>
 
 </body>
+<footer class="footer">
+  <div class="content has-text-centered">
+    <p>
+    &copy; <?php echo date("Y"); ?>  <strong>SWIEZENEWSY.PL</strong> by <a href="https://github.com/fandzio647/news">
+        Maks, Szymon, Mateusz</a>. The source code is licensed by me.
+    </p>
+  </div>
+</footer>
+
 
 </html>
