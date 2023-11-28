@@ -19,8 +19,13 @@ else{
 <html>
 <head>
 <title>User Login</title>
+<link rel="stylesheet" type="text/css" href="styl.css">
+
 </head>
+
 <body>
+<div class="dod">
+    <h1> DODAWANIE NEWSA NA STRONE </h1>
 <form action="" method="post">
   <label for="id">Id:</label>
   <input type="text" id="id" name="id" required>
@@ -37,7 +42,8 @@ else{
   <textarea id="tresc" name="tresc" rows="20" required></textarea>
   <br>
 
-  <input type="submit" value="Submit">
+  <input type="submit" value="DODAJ ">
 </form>
+</div>
 </body>
 </html>
