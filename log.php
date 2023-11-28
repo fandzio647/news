@@ -26,8 +26,12 @@
 <html>
 <head>
 <title>User Login</title>
+<link rel="stylesheet" type="text/css" href="styl.css">
+
 </head>
 <body>
+<div class="log">
+
 <form name="User" method="post" action="" align="center">
 <div class="message"><?php if($message!="") { echo $message; } ?></div>
 <h3 align="center">Login</h3>
@@ -40,5 +44,6 @@
 <input type="submit" name="submit" value="Submit">
 <input type="reset">
 </form>
+</log>
 </body>
 </html>
