@@ -31,7 +31,7 @@
 </head>
 <body>
 <div class="log">
-
+<h1>ZALOGUJ SIE NA STRONE</h1>
 <form name="User" method="post" action="" align="center">
 <div class="message"><?php if($message!="") { echo $message; } ?></div>
 <h3 align="center">Login</h3>
